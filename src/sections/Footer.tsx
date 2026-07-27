@@ -32,7 +32,7 @@ export default function Footer() {
         </motion.div>
       </div>
 
-      {/* Floating circle - left */}
+      
       <motion.div
         animate={{
           y: [0, -35, 0],
@@ -47,7 +47,7 @@ export default function Footer() {
         className="pointer-events-none absolute -left-20 top-8 h-52 w-52 rounded-full border-[35px] border-white/20"
       />
 
-      {/* Floating circle - right */}
+   
       <motion.div
         animate={{
           y: [0, 30, 0],
@@ -61,7 +61,7 @@ export default function Footer() {
         className="pointer-events-none absolute -right-16 bottom-10 h-60 w-60 rounded-full bg-white/15"
       />
 
-      {/* Small rotating decorative shape */}
+    
       <motion.div
         animate={{
           rotate: 360,
