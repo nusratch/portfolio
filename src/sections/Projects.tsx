@@ -6,29 +6,33 @@ import { useState } from "react";
 import Container from "@/src/components/Container";
 
 const projects = [
-   {
-    title: "Online ebook Platform",
-    shortTitle: "ebook",
+  {
+    title: "Online Ebook Platform",
+    shortTitle: "Ebook",
     category: "Full-Stack Development",
     image: "/images/ebook.jpeg",
+    liveUrl: "https://e-book-platform-two.vercel.app",
   },
   {
-    title: "Luxury Fashion Platform",
-    shortTitle: "Fashion",
-    category: "Full-Stack Development",
+    title: "Digital Service Platform",
+    shortTitle: "Digital Service",
+    category: "Frontend Development",
     image: "/images/projects1.jpeg",
+    liveUrl: "https://digitool-platform-bd.netlify.app/",
   },
   {
-    title: "Modern Portfolio Experience",
-    shortTitle: "Portfolio",
-    category: "Full-Stack Development",
-    image: "/images/projects2.jpeg",
-  },
-  {
-    title: " Online Friendship Platform",
+    title: "Online Friendship Platform",
     shortTitle: "Friendship Platform",
-    category: "Full-Stack Development",
+    category: "Frontend Development",
+    image: "/images/projects2.jpeg",
+    liveUrl: "https://remarkable-churros-f01530.netlify.app",
+  },
+  {
+    title: "Online Education Platform",
+    shortTitle: "Education Platform",
+    category: "Frontend Development",
     image: "/images/projects3.jpeg",
+    liveUrl: "https://luxury-dasik-21b677.netlify.app",
   },
 ];
 
@@ -40,7 +44,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative min-h-[900px] overflow-hidden bg-[#7857ff] py-24 sm:py-28 lg:py-32"
+      className="relative overflow-hidden bg-[#43d83d] py-20 sm:py-24 lg:py-28"
     >
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-[#19f719] via-[#60e039] to-[#3e923b]" />
 
@@ -55,7 +59,7 @@ export default function Projects() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="pointer-events-none absolute -left-40 top-10 h-[550px] w-[550px] rounded-full bg-[#38bdf8]/35 blur-[110px]"
+        className="pointer-events-none absolute -left-40 top-10 h-[500px] w-[500px] rounded-full bg-[#38bdf8]/35 blur-[110px]"
       />
 
       <motion.div
@@ -69,7 +73,7 @@ export default function Projects() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="pointer-events-none absolute -right-40 bottom-0 h-[600px] w-[600px] rounded-full bg-[#ff74d4]/30 blur-[120px]"
+        className="pointer-events-none absolute -right-40 bottom-0 h-[550px] w-[550px] rounded-full bg-[#ff74d4]/30 blur-[120px]"
       />
 
       <motion.div
@@ -81,7 +85,7 @@ export default function Projects() {
           repeat: Infinity,
           ease: "linear",
         }}
-        className="pointer-events-none absolute left-1/2 top-[48%] h-[700px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/10"
+        className="pointer-events-none absolute left-1/2 top-1/2 h-[650px] w-[650px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/10"
       />
 
       <motion.div
@@ -93,7 +97,7 @@ export default function Projects() {
           repeat: Infinity,
           ease: "linear",
         }}
-        className="pointer-events-none absolute left-1/2 top-[48%] h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/10"
+        className="pointer-events-none absolute left-1/2 top-1/2 h-[480px] w-[480px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/10"
       />
 
       <div
@@ -132,7 +136,7 @@ export default function Projects() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="pointer-events-none absolute right-[5%] top-[24%] h-44 w-44 rounded-full border border-white/20"
+        className="pointer-events-none absolute right-[5%] top-[24%] h-40 w-40 rounded-full border border-white/20"
       />
 
       <Container>
@@ -151,16 +155,16 @@ export default function Projects() {
             }}
             viewport={{ once: true }}
           >
-            <p className="text-xs font-semibold uppercase tracking-[0.45em] text-white/55 sm:text-sm">
+            <p className="text-xs font-semibold uppercase tracking-[0.45em] text-white/60 sm:text-sm">
               Selected Work
             </p>
 
-            <h2 className="mt-5 text-5xl font-black tracking-[-0.055em] text-white sm:text-6xl lg:text-8xl">
+            <h2 className="mt-4 text-5xl font-black tracking-[-0.055em] text-white sm:text-6xl lg:text-7xl">
               My Projects
             </h2>
           </motion.div>
 
-          <div className="mt-12 flex flex-wrap items-center justify-center gap-3 sm:gap-4 lg:mt-14">
+          <div className="mt-9 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
             {projects.map((item, index) => (
               <motion.button
                 key={item.title}
@@ -175,7 +179,7 @@ export default function Projects() {
                 className={`rounded-full px-5 py-2.5 text-sm font-semibold transition-all duration-300 sm:px-6 ${
                   activeProject === index
                     ? "bg-white text-[#7047e8] shadow-[0_8px_30px_rgba(255,255,255,0.25)]"
-                    : "border border-white/20 bg-white/10 text-white/70 backdrop-blur-md hover:bg-white/20 hover:text-white"
+                    : "border border-white/25 bg-white/10 text-white/75 backdrop-blur-md hover:bg-white/20 hover:text-white"
                 }`}
               >
                 {item.shortTitle}
@@ -183,51 +187,51 @@ export default function Projects() {
             ))}
           </div>
 
-          <div className="relative mx-auto mt-12 max-w-[1050px] sm:mt-14">
-            <div className="pointer-events-none absolute -inset-10 rounded-[60px] bg-white/10 blur-[70px]" />
+          <div className="relative mx-auto mt-10 max-w-[900px] sm:mt-12">
+            <div className="pointer-events-none absolute -inset-7 rounded-[50px] bg-white/10 blur-[60px]" />
 
             <AnimatePresence mode="wait">
               <motion.article
                 key={project.title}
                 initial={{
                   opacity: 0,
-                  y: 50,
-                  scale: 0.96,
-                  rotateX: 4,
+                  y: 40,
+                  scale: 0.97,
                 }}
                 animate={{
                   opacity: 1,
                   y: 0,
                   scale: 1,
-                  rotateX: 0,
                 }}
                 exit={{
                   opacity: 0,
-                  y: -30,
-                  scale: 0.97,
+                  y: -25,
+                  scale: 0.98,
                 }}
                 transition={{
-                  duration: 0.55,
+                  duration: 0.5,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="relative overflow-hidden rounded-[34px] border border-white/25 bg-white/15 p-3 shadow-[0_35px_100px_rgba(38,17,105,0.35)] backdrop-blur-xl sm:rounded-[44px] sm:p-5"
+                className="relative overflow-hidden rounded-[28px] border border-white/30 bg-white/15 p-3 shadow-[0_30px_80px_rgba(38,17,105,0.3)] backdrop-blur-xl sm:rounded-[36px] sm:p-4"
               >
-                <div className="relative overflow-hidden rounded-[25px] sm:rounded-[34px]">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    width={1400}
-                    height={850}
-                    priority
-                    className="h-[300px] w-full object-cover sm:h-[440px] lg:h-[570px]"
-                  />
+                <div className="relative overflow-hidden rounded-[20px] bg-black/10 sm:rounded-[28px]">
+                  <div className="relative h-[260px] w-full sm:h-[360px] lg:h-[430px]">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      priority
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 900px"
+                      className="object-contain"
+                    />
+                  </div>
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#170c40]/80 via-transparent to-transparent" />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#170c40]/70 via-transparent to-transparent" />
 
                   <motion.div
                     initial={{
                       opacity: 0,
-                      y: 30,
+                      y: 20,
                     }}
                     animate={{
                       opacity: 1,
@@ -235,42 +239,44 @@ export default function Projects() {
                     }}
                     transition={{
                       delay: 0.2,
-                      duration: 0.5,
+                      duration: 0.45,
                     }}
-                    className="absolute bottom-0 left-0 right-0 p-6 sm:p-9 lg:p-12"
+                    className="absolute bottom-0 left-0 right-0 p-5 sm:p-7 lg:p-8"
                   >
-                    <p className="mb-3 text-xs font-semibold uppercase tracking-[0.3em] text-white/60">
+                    <p className="mb-2 text-[10px] font-semibold uppercase tracking-[0.28em] text-white/70 sm:text-xs">
                       {project.category}
                     </p>
 
-                    <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
-                      <h3 className="max-w-[700px] text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+                    <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                      <h3 className="max-w-[600px] text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl">
                         {project.title}
                       </h3>
 
-                      <motion.button
-                        type="button"
+                      <motion.a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         whileHover={{
-                          scale: 1.06,
-                          y: -3,
+                          scale: 1.05,
+                          y: -2,
                         }}
                         whileTap={{
                           scale: 0.96,
                         }}
-                        className="w-fit shrink-0 rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#7047e8] shadow-xl"
+                        className="w-fit shrink-0 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-[#7047e8] shadow-xl transition-shadow duration-300 hover:shadow-2xl"
                       >
                         View Project
-                      </motion.button>
+                      </motion.a>
                     </div>
                   </motion.div>
                 </div>
               </motion.article>
             </AnimatePresence>
 
-            <div className="pointer-events-none absolute -bottom-6 left-1/2 h-16 w-[70%] -translate-x-1/2 rounded-full bg-[#ff76d5]/30 blur-[45px]" />
+            <div className="pointer-events-none absolute -bottom-5 left-1/2 h-14 w-[65%] -translate-x-1/2 rounded-full bg-[#ff76d5]/30 blur-[40px]" />
           </div>
 
-          <div className="mt-10 flex justify-center gap-2">
+          <div className="mt-7 flex justify-center gap-2">
             {projects.map((item, index) => (
               <button
                 key={item.title}
@@ -279,7 +285,7 @@ export default function Projects() {
                 aria-label={`Show ${item.title}`}
                 className={`h-2 rounded-full transition-all duration-500 ${
                   activeProject === index
-                    ? "w-10 bg-white"
+                    ? "w-9 bg-white"
                     : "w-2 bg-white/35"
                 }`}
               />
