@@ -130,7 +130,7 @@ export default function Footer() {
 
               <p className="mx-auto mt-3 max-w-[300px] text-sm leading-6 text-zinc-800/70 md:mx-0">
                 Building thoughtful digital experiences with modern
-                technologies and clean design.
+                technologies.
               </p>
             </motion.div>
 
@@ -170,7 +170,7 @@ export default function Footer() {
             >
             
               <motion.a
-                href="https://github.com/nusratchy"
+                href="https://github.com/nusratch"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -195,7 +195,7 @@ export default function Footer() {
 
               
               <motion.a
-                href="https://www.linkedin.com/in/nusratchy"
+                href="https://www.linkedin.com/in/nusratch"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -272,7 +272,7 @@ export default function Footer() {
               }}
               className="text-sm font-medium text-zinc-800/60"
             >
-              Designed & built with care.
+              Built with code & caffeine.
             </motion.p>
           </motion.div>
         </div>

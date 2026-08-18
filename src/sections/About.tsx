@@ -144,7 +144,7 @@ export default function About() {
             </h2>
 
             <p className="mt-7 text-base leading-8 text-white/100 sm:text-lg">
-              I&apos;m Nusrat, a developer who enjoys turning ideas into
+              I&apos;m Nusrat, a full-stack developer who enjoys turning ideas into
               thoughtful digital experiences. I work across frontend and
               backend development, with a strong interest in clean interfaces,
               responsive design, and smooth interactions.

@@ -157,9 +157,9 @@ export default function Contact() {
                     "Portfolio",
                     "Business Website",
                     "Landing Page",
-                    "Full-Stack App",
+                    "Custom Website",
                     "E-Commerce",
-                    "UI/UX Design",
+                
                   ].map((service, index) => (
                     <label
                       key={service}
