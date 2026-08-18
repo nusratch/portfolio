@@ -199,7 +199,6 @@ export default function Hero() {
                 fill="#E75480"
                 fillOpacity="0.5"
               />
-
               <ellipse
                 cx="20"
                 cy="30"
@@ -208,7 +207,6 @@ export default function Hero() {
                 fill="#E75480"
                 fillOpacity="0.5"
               />
-
               <ellipse
                 cx="10"
                 cy="20"
@@ -217,7 +215,6 @@ export default function Hero() {
                 fill="#E75480"
                 fillOpacity="0.5"
               />
-
               <ellipse
                 cx="30"
                 cy="20"
@@ -226,7 +223,6 @@ export default function Hero() {
                 fill="#E75480"
                 fillOpacity="0.5"
               />
-
               <circle
                 cx="20"
                 cy="20"
@@ -251,7 +247,7 @@ export default function Hero() {
       <Container>
         <div className="relative z-10 flex min-h-[calc(100vh-7rem)] items-center">
           <div className="max-w-[900px] py-16">
-            <motion.div
+            <motion.h1
               initial={{
                 opacity: 0,
                 x: -35,
@@ -264,68 +260,8 @@ export default function Hero() {
                 duration: 0.7,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mb-7 flex items-center"
+              className="text-5xl font-bold leading-[0.95] tracking-tight text-[#C85C8E] sm:text-6xl lg:text-7xl xl:text-8xl"
             >
-              <motion.div
-                animate={{
-                  y: [0, -4, 0],
-                }}
-                transition={{
-                  duration: 2.5,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-                className="relative overflow-hidden rounded-full border border-[#C85C8E]/30 bg-white/60 px-5 py-3 shadow-[0_8px_30px_rgba(200,92,142,0.14)] backdrop-blur-md"
-              >
-                <motion.div
-                  animate={{
-                    x: ["-150%", "350%"],
-                  }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    repeatDelay: 1.5,
-                    ease: "easeInOut",
-                  }}
-                  className="pointer-events-none absolute inset-y-0 w-12 rotate-12 bg-gradient-to-r from-transparent via-white/90 to-transparent blur-sm"
-                />
-
-                <div className="relative z-10 flex items-center gap-3">
-                  <span className="relative flex h-3 w-3 items-center justify-center">
-                    <motion.span
-                      animate={{
-                        scale: [1, 2.1, 1],
-                        opacity: [0.6, 0, 0.6],
-                      }}
-                      transition={{
-                        duration: 1.8,
-                        repeat: Infinity,
-                        ease: "easeOut",
-                      }}
-                      className="absolute h-full w-full rounded-full bg-[#E75480]"
-                    />
-
-                    <span className="relative h-2.5 w-2.5 rounded-full bg-[#C85C8E]" />
-                  </span>
-
-                  <motion.span
-                    animate={{
-                      letterSpacing: ["0.18em", "0.24em", "0.18em"],
-                    }}
-                    transition={{
-                      duration: 3,
-                      repeat: Infinity,
-                      ease: "easeInOut",
-                    }}
-                    className="text-sm font-extrabold uppercase text-[#8F2856] sm:text-base"
-                  >
-                    Full-Stack Developer
-                  </motion.span>
-                </div>
-              </motion.div>
-            </motion.div>
-
-            <h1 className="text-5xl font-bold leading-[0.95] tracking-tight text-[#C85C8E] sm:text-6xl lg:text-7xl xl:text-8xl">
               {typedName}
 
               <motion.span
@@ -339,7 +275,7 @@ export default function Hero() {
                 }}
                 className="ml-1 inline-block h-[0.8em] w-[3px] bg-[#C85C8E] align-middle sm:w-[4px]"
               />
-            </h1>
+            </motion.h1>
 
             <motion.p
               initial={{

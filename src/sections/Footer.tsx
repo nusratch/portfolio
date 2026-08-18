@@ -8,7 +8,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative overflow-hidden bg-[#ecf01e] text-zinc-900">
+    <footer className="relative overflow-hidden bg-[#e07ca6] text-zinc-900">
 
     
   
@@ -25,7 +25,7 @@ export default function Footer() {
           {[0, 1].map((group) => (
             <div key={group} className="flex shrink-0">
               <span className="px-8 text-[120px] font-black tracking-[-0.06em] sm:text-[170px] lg:text-[220px]">
-                BUILD • CREATE • DESIGN •
+              Nusrat  Chowdhury
               </span>
             </div>
           ))}

@@ -44,9 +44,9 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative overflow-hidden bg-[#43d83d] py-20 sm:py-24 lg:py-28"
+      className="relative overflow-hidden bg-[#df5050] py-20 sm:py-24 lg:py-28"
     >
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-[#19f719] via-[#60e039] to-[#3e923b]" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-[#f11414] via-[#ee3b53] to-[#cc6c6c]" />
 
       <motion.div
         animate={{

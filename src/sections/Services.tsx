@@ -34,7 +34,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="relative overflow-hidden bg-[#69C6F4] py-24 sm:py-28 lg:py-32"
+      className="relative overflow-hidden bg-[#ad1313] py-24 sm:py-28 lg:py-32"
     >
       <motion.div
         animate={{

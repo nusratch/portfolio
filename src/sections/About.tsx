@@ -8,7 +8,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-[#7047E8] py-24 text-white sm:py-28 lg:py-32"
+      className="relative overflow-hidden bg-[#31b6f3] py-24 text-white sm:py-28 lg:py-32"
     >
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.07]"
@@ -46,7 +46,7 @@ export default function About() {
       />
 
       <Container>
-        <div className="relative z-10 mx-auto grid max-w-5xl grid-cols-1 items-center gap-16 lg:grid-cols-[0.85fr_1.15fr] lg:gap-24">
+        <div className="relative z-10 mx-auto grid max-w-5xl grid-cols-1 items-center gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -59,8 +59,8 @@ export default function About() {
           >
             <motion.div
               whileHover={{
-                y: -6,
-                scale: 1.015,
+                y: -5,
+                scale: 1.02,
               }}
               transition={{
                 type: "spring",
@@ -69,19 +69,17 @@ export default function About() {
               }}
               className="relative"
             >
-              <div className="absolute -bottom-5 -right-5 h-full w-full rounded-full border border-white/30 bg-white/10" />
+              <div className="absolute -bottom-4 -right-4 h-full w-full rounded-full border border-white/25 bg-white/10" />
 
-              <div className="absolute -left-5 -top-5 h-24 w-24 rounded-tl-full border-l-2 border-t-2 border-[#FFB4D5]/80" />
+              <div className="absolute -left-4 -top-4 h-20 w-20 rounded-tl-full border-l-2 border-t-2 border-[#FFB4D5]/70" />
 
-              <div className="absolute -bottom-5 -right-5 z-20 h-24 w-24 rounded-br-full border-b-2 border-r-2 border-cyan-200/70" />
-
-              <div className="relative h-[270px] w-[270px] overflow-hidden rounded-full border-[6px] border-white/90 bg-white shadow-[0_30px_70px_rgba(34,15,90,0.30)] sm:h-[310px] sm:w-[310px]">
+              <div className="relative h-[210px] w-[210px] overflow-hidden rounded-full border-[5px] border-white/90 bg-white shadow-[0_25px_60px_rgba(34,15,90,0.30)] sm:h-[230px] sm:w-[230px] lg:h-[245px] lg:w-[245px]">
                 <Image
-                  src="/images/profile.jpeg"
+                  src="/images/photo.jpeg"
                   alt="Nusrat Chowdhury"
                   fill
-                  sizes="(max-width: 640px) 270px, 310px"
-                  className="object-cover object-center"
+                  sizes="(max-width: 640px) 210px, (max-width: 1024px) 230px, 245px"
+                  className="object-cover object-[50%_8%] scale-[1.18]"
                   priority
                 />
               </div>
@@ -95,7 +93,7 @@ export default function About() {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-                className="absolute -right-8 top-10 h-3 w-3 rounded-full bg-[#FFD0E4]"
+                className="absolute -right-6 top-8 h-3 w-3 rounded-full bg-[#FFD0E4]"
               />
 
               <motion.div
@@ -107,7 +105,7 @@ export default function About() {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-                className="absolute -left-8 bottom-16 h-2.5 w-2.5 rounded-full bg-cyan-200"
+                className="absolute -left-6 bottom-12 h-2.5 w-2.5 rounded-full bg-cyan-200"
               />
             </motion.div>
           </motion.div>
@@ -145,20 +143,20 @@ export default function About() {
               Nusrat, behind the pixels
             </h2>
 
-            <p className="mt-7 text-base leading-8 text-white/75 sm:text-lg">
+            <p className="mt-7 text-base leading-8 text-white/100 sm:text-lg">
               I&apos;m Nusrat, a developer who enjoys turning ideas into
               thoughtful digital experiences. I work across frontend and
               backend development, with a strong interest in clean interfaces,
               responsive design, and smooth interactions.
             </p>
 
-            <p className="mt-5 text-base leading-8 text-white/65 sm:text-lg">
+            <p className="mt-5 text-base leading-8 text-white/100 sm:text-lg">
               I enjoy learning, experimenting, and building products that feel
               simple, useful, and enjoyable to use.
             </p>
 
-            <div className="mt-9 flex flex-wrap justify-center gap-3 lg:justify-start">
-              {["Frontend", "Full-Stack", "UI"].map((item, index) => (
+            <div className="mt-9 flex flex-wrap  text-white/100 justify-center gap-3 lg:justify-start">
+              {["Frontend", "Full-Stack"].map((item, index) => (
                 <motion.span
                   key={item}
                   initial={{ opacity: 0, y: 15 }}
