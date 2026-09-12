@@ -85,9 +85,7 @@ export default function About() {
               </div>
 
               <motion.div
-                animate={{
-                  y: [0, -7, 0],
-                }}
+                animate={{ y: [0, -7, 0] }}
                 transition={{
                   duration: 3.5,
                   repeat: Infinity,
@@ -97,9 +95,7 @@ export default function About() {
               />
 
               <motion.div
-                animate={{
-                  y: [0, 8, 0],
-                }}
+                animate={{ y: [0, 8, 0] }}
                 transition={{
                   duration: 4,
                   repeat: Infinity,
@@ -143,19 +139,32 @@ export default function About() {
               Nusrat, behind the pixels
             </h2>
 
-            <p className="mt-7 text-base leading-8 text-white/100 sm:text-lg">
-              I&apos;m Nusrat, a full-stack developer who enjoys turning ideas into
-              thoughtful digital experiences. I work across frontend and
+            <p className="mt-7 text-base leading-8 text-white sm:text-lg">
+              I&apos;m Nusrat, a full-stack developer who enjoys turning ideas
+              into thoughtful digital experiences. I work across frontend and
               backend development, with a strong interest in clean interfaces,
-              responsive design, and smooth interactions.
+              responsive websites, and smooth interactions.
             </p>
 
-            <p className="mt-5 text-base leading-8 text-white/100 sm:text-lg">
+            <p className="mt-5 text-base leading-8 text-white sm:text-lg">
               I enjoy learning, experimenting, and building products that feel
               simple, useful, and enjoyable to use.
             </p>
 
-            <div className="mt-9 flex flex-wrap  text-white/100 justify-center gap-3 lg:justify-start">
+            <motion.a
+              href="/resume.pdf"
+              download
+              whileHover={{ y: -3 }}
+              whileTap={{ scale: 0.97 }}
+              className="group mt-8 inline-flex items-center gap-3 rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-cyan-900/10 backdrop-blur-md transition-all duration-300 hover:border-white/50 hover:bg-white/20"
+            >
+              <span>Download CV</span>
+              <span className="text-lg transition-transform duration-300 group-hover:translate-y-0.5">
+                ↓
+              </span>
+            </motion.a>
+
+            <div className="mt-9 flex flex-wrap justify-center gap-3 lg:justify-start">
               {["Frontend", "Full-Stack"].map((item, index) => (
                 <motion.span
                   key={item}
