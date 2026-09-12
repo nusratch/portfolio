@@ -14,6 +14,13 @@ const projects = [
     liveUrl: "https://e-book-platform-two.vercel.app",
   },
   {
+    title: "Doctor Appointment",
+    shortTitle: "Doctor Appointment",
+    category: "Full-Stack Development",
+    image: "/images/docapp.jpeg",
+    liveUrl: "https://doctor-appointment-client-psi.vercel.app",
+  },
+  {
     title: "Digital Service Platform",
     shortTitle: "Digital Service",
     category: "Frontend Development",
